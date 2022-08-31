@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> <!-- define character set, UTF-8 in this case, basic character set -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- used to fit mobile device screens and reset zoom on website refresh -->
+    <title> Cameron Farley Digital Portfolio</title> <!-- words that go in that tab at top of screen -->
+    <link rel="stylesheet" type="text/css" href="designClass.css"> <!-- link the html to css file -->
+    
+  </head>
+  <body>
+
+      <a href="index.html" class="homelink">Home</a>
+      <a style="cursor:pointer" class="links">Classes</a>
+      <a href="portfolio.html" class="links">Portfolio Importance</a>
+      <a href="experience.html" class="links">Experience</a>
+      <a href="fingerprints.html" class="links">Fingerprints</a>
+    
+    <div class="profile-about">
+      <h1>Previouly Taken Classes</h1>
+    </div>
+
+    <div class="timeline-area">
+      <div class="container">
+	<div class="all-timelines">
+	  <!--SINGLE TIMELINE-->
+	  <div class="single-timeline d-flex-2">
+	    <div class="timeline-blank"></div>
+	    <div class="timeline-text d-flex-2">
+	      <span>
+		<h6>2020-21</h6> — Computer Science I: My first Computer Science class offered by a school. A start of a new journey.
+	      </span>
+	      <div class="t-square"></div>
+	    </div>
+	  </div>
+	  <!--SINGLE TIMELINE-->
+	  <div class="single-timeline d-flex-2">
+	    <div class="timeline-blank"></div>
+	    <div class="timeline-text d-flex-2">
+	      <span>
+		<h6>2021-22</h6>— AP English III: My first important English class, not only will it offer college credit, but will also introduce me to a "college-level" English class.
+	      </span>
+	      <div class="t-square"></div>
+	    </div>
+	  </div>
+	  <!--SINGLE TIMELINE-->
+	  <div class="single-timeline d-flex-2">
+	    <div class="timeline-blank"></div>
+	    <div class="timeline-text d-flex-2">
+	      <span>
+		<h6>2021-22</h6> — AP Physics I: Great step in the right direction for the start of my engineering career. Physiscs is required by most colleges and is a fundamental of engineering. 
+	      </span>
+	      <div class="t-square"></div>
+	    </div>
+	  </div>
+	  <!--SINGLE TIMELINE-->
+	  <div class="single-timeline d-flex-2">
+	    <div class="timeline-blank"></div>
+	    <div class="timeline-text d-flex-2">
+	      <span>
+		<h6>2021-22</h6> — Computer Science II: My second computer science class offered by a school, had a great focus on projects and a more college-like structure.
+	      </span>
+	      <div class="t-square"></div>
+	    </div>
+	  </div>
+	  <!--SINGLE TIMELINE-->
+	  <div class="single-timeline d-flex-2">
+	    <div class="timeline-blank"></div>
+	    <div class="timeline-text d-flex-2">
+	      <span>
+		<h6>2022-23</h6> — AP English IV: Another important class that is sometimes required by colleges, will also focus on my critical thinking ability, while also expanding my vocabulary.
+	      </span>
+	      <div class="t-square"></div>
+	    </div>
+	  </div>
+	  <!--SINGLE TIMELINE-->
+	  <div class="single-timeline d-flex-2">
+	    <div class="timeline-blank"></div>
+	    <div class="timeline-text d-flex-2">
+	      <span>
+		<h6>2022-23</h6> — AP Calculus AB: Very important class, engineering is built off of math and getting a good math understanding early on will help me get ahead in the field of engineering.
+	      </span>
+	      <div class="t-square"></div>
+	    </div>
+	  </div>
+	  <!--SINGLE TIMELINE-->
+	  <div class="single-timeline d-flex-2">
+	    <div class="timeline-blank"></div>
+	    <div class="timeline-text d-flex-2">
+	      <span>
+		<h6>2022-23</h6> — Computer Science III: My final computer science class offered by my high school. Will mark three years of computer science in school.
+	      </span>
+	      <div class="t-square"></div>
+	    </div>
+	  </div>
+	</div>
+	  </div>
+    
+  </body>
+</html>
