@@ -335,6 +335,7 @@ section .portInfo {
 .linkToSite {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    text-align: center;
+    margin-left: 49%;
     padding-bottom: 50px;
 }

@@ -26,7 +26,7 @@ h1 {
     font-family: Helvetica;
     font-size: 20px;
     letter-spacing: 1px;
-    line-height: 2;
+    line-height: 1.3;
     margin-top: 50px;
     margin-left: 20%;
     margin-right: 20%;
@@ -65,20 +65,8 @@ a:hover, a:active {
     font-family: Helvetica;
 }
 
-.flowchart{
-    position: absolute;
-    margin-left: 40%;
-}
-
-.sources {
-    font-family: Helvetica;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 600px;
-    margin-bottom: 50px;
-    line-height: 2;
-}
-
-.italic {
-    font-style: italic;
+.essayLinks {
+    font-size: 200px;
+    padding-left: 50px;
+    padding-top: 100px;
 }
