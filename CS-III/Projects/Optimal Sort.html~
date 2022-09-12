@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> <!-- define character set, UTF-8 in this case, basic character set -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- used to fit mobile device screens and reset zoom on website refresh -->
     <title> Cameron Farley Digital Portfolio</title> <!-- words that go in that tab at top of screen -->
-    <link rel="stylesheet" type="text/css" href="format.css"> <!-- link the html to css file -->
+    <link rel="stylesheet" type="text/css" href="sort.css"> <!-- link the html to css file -->
     
   </head>
   <body>
@@ -13,15 +13,22 @@
       <a href="../classes.html" class="links">Classes</a>
       <a href="../portfolio.html" class="links">Portfolio Importance</a>
       <a href="../../experience/experience.html" class="links">Experience</a>
-      <a style="cursor:pointer" class="links">Essays</a>
-      <a href="../Projects/projects.html" class="links">Projects</a>
+      <a href="essays.html" class="links">Essays</a>
+      <a href="projects.html" class="links">Projects</a>
     
-      <h1 class="profile-about">Essays</h1>
+    <div class="profile-about">
+      <h1>Optimal Sorting</h1>
+    </div>
 
-      <a href="fingerprints.html" class="essayLinks">Fingerprints</a>
+      <p class="text">
+	Group Members: Cameron F, Oliver H, Tejasvi G, Ayaan K
+      </p>
+
+      <a href="https://github.com/cameronFarley/Optimal-Sorting" class="githubLink">Link to github</a>
+
       <br>
-      <br>
-      <a href="AI Sentience.html" class="essayLinks">AI Sentience</a>
-    
+      
+      <img src="images/optimal-sorting-flowchart.png" class="flowchart">
+      
   </body>
 </html>
