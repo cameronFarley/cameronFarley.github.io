@@ -248,7 +248,7 @@ section .portInfo {
 
 .pagination a.active {
     background-color: #fbf6eb;
-    font-color: #696969;
+    color: #696969;
 }
 
 .pagination a:hover:not(.active) {background-color: #fbf6eb;}

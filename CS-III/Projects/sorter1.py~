@@ -9,7 +9,7 @@ def insertion_sort(list_a):
             list_a[i], list_a[i-1] = list_a[i-1], list_a[i]
             i -= 1
 
-    return list_a            
+return list_a            
 
 STDIN = []
 userInput = sys.stdin
