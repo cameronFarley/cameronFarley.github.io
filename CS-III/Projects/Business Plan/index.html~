@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> <!-- define character set, UTF-8 in this case, basic character set -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- used to fit mobile device screens and reset zoom on website refresh -->
+    <title> Cameron Farley Digital Portfolio</title> <!-- words that go in that tab at top of screen -->
+    <link rel="stylesheet" type="text/css" href="main.css"> <!-- link the html to css file -->
+    
+  </head>
+  <body>
+
+      <a href="../../../index.html" class="homelink">Home</a>
+      <a href="../../classes.html" class="links">Classes</a>
+      <a href="../../portfolio.html" class="links">Portfolio Importance</a>
+      <a href="../../../experience/experience.html" class="links">Experience</a>
+      <a href="../../Essays/essays.html" class="links">Essays</a>
+      <a href="../projects.html" class="links">Projects</a>
+    
+    <div class="profile-about">
+      <h1>Business Plan</h1>
+    </div>
+
+    <hr size="2" width="50%" color="#efa22f">
+    
+    <div class="header">
+      <h2>Classroom Attendence via Facial Recognition</h2>
+      <br>
+      <h4>Cameron Farley | Oliver Hankins | Joshua Lee</h4>
+    </div>
+
+    <div class="ganttLink">
+      <a href="" target="blank">Gantt Chart</a>
+    </div>
+    
+    <div class="text">
+      For our Computer Science class, we were challenged to brainstorm a project idea that would come to fruition throughout the next couple of months. After many hour of recognizing real world problems and narrowing them down to a product that could combine softerware, electrical, and mechanical engineering, we came up with the idea of a program that uses facial recognition to keep track of attendance in class. Below are the details that were thought through to help our product become successful:<br>
+      <br>
+      <b>Identity</b><br>
+      Use facial recognition for school attendance, thus teachers will not have to manually report attendance which will minimize false tardies.<br>
+      <br>
+      <b>Problem</b><br>
+      Taking attendance interferes with the students' learning experience as it takes away from valuable class time that teachers can take advantage of. The process of taking attendance can take 2-3 minutes each class period, which will come out to be a total loss of 6-9 instructional hours from a daily class, and 3-6 hours from an every-other-day class. Furthermore, there can be an additional loss of class time due to the shuttle schedule, as teachers will have to wait on students to arrive to class.<br>
+      <br>
+      <b>Solution</b><br>
+      Create an algorithm and physical form for the program to be used in classrooms, offices, or other environments who wish to purchase the product.<br>
+      <br>
+      <b>Target Market</b><br>
+      The target audience for a Facial recognition-based Attendance system would be primarilty schools, however, a smaller audience exists for business and groups that may need to track attendance in a building or certain area.<br>
+      <br>
+      <b>Competition</b><br>
+      Many facial recognition systems exist on a large scale, such as Timeero, Jubble, and Fareclock. However, these companies only work towards our goal to an extent, they are all used for clocking in to work by taking a picture of yourself, this creates a manual responsibility for the people and could be easy to forget.<br>
+      <br>
+      <b>Revenue Streams</b><br>
+      Our products will be sold directly to customers using the website.<br>
+      <br>
+      <b>Marketing Activities</b><br>
+      We will advertise on select websites, technology conventions, direct emails and ads to school districts.<br>
+      <br>
+      <b>Expenses</b><br>
+      Price to build the physical body<br>
+      Price for shipping<br>
+      Price for advertisements<br>
+      <br>
+      <b>Team and Key Roles</b><br>
+      With three members: one team memeber will be given the responsibility of creating an AI with the ability to recognize and remember faces, one person will have to work on connecting the camera that see the faces with the program, and the third person will have to work giving the AI eyes, allowing it so see and recognize faces. All positions can have additional people as well as gaps that arent yet discovered. (One member will have to test and configure the AI to recognize regardless of a hat,glasses, or other facial changes that can occur from day to day).<br>
+      <br>
+      <b>Milestones</b><br>
+      As designs and production come close to finishing, the announcement will be made on select advertising platforms to people who have enough power to possibly try to implement our product into the classroom.
+      
+    </div>
+    
+  </body>
+</html>

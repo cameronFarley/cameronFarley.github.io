@@ -20,25 +20,40 @@
       <h1>Optimal Sorting</h1>
     </div>
 
+    <hr size="2" width="50%" color="#efa22f">
+    
       <p class="text">
 	Group Members: Cameron F, Oliver H, Tejasvi G, Ayaan K
       </p>
 
-      <a href="https://github.com/cameronFarley/Optimal-Sorting" class="githubLink" target="blank">Link to github</a>
-
-      <br>
-      <br>
-      <br>
-
-      <a href="https://docs.google.com/spreadsheets/d/1dLZph44IJSb284MJU8-0RXpuXd4iR6u1IM-Px9kAWMg/edit?usp=sharing" class="sheetsLink" target="blank">Link to Google Sheets Run</a>
-      <br>
-      <br>
-      <br>
-      <a href="https://docs.google.com/spreadsheets/d/1LedkqtCQhHs73prglJ9KQd5-x1NVGY1w5BRFh_92VRA/edit#gid=0" class="sheetsLink" target="blank">Link to Google Sheets Summary</a>
+      <a href="https://github.com/cameronFarley/Optimal-Sorting" target="blank" class="sheetsLink">Link to github</a>
+      <a href="https://docs.google.com/spreadsheets/d/1dLZph44IJSb284MJU8-0RXpuXd4iR6u1IM-Px9kAWMg/edit?usp=sharing" target="blank" class="sheetsLink">Link to Google Sheets Run</a>
+      <a href="https://docs.google.com/spreadsheets/d/1LedkqtCQhHs73prglJ9KQd5-x1NVGY1w5BRFh_92VRA/edit#gid=0" target="blank" class="sheetsLink">Link to Google Sheets Summary</a>
       
       <br>
       
       <img src="images/optimal-sorting-flowchart.png" class="flowchart">
+
+      <div class="profile-about">
+	<h1>Sorting Analysis</h1>
+      </div>
+      
+      <hr size="2" width="50%" color="#efa22f">
+      
+      <br>
+      <br>
+
+      <a href="https://docs.google.com/spreadsheets/d/1t3GngyMj5PpleJghEDir5J5dYD0dIaUwRTwg_BMrOeo/edit#gid=0" target="blank" class="githubLink">Link to Trials Information</a>
+      <a href="https://docs.google.com/spreadsheets/d/1z8DJ2FBEI5N1ExIAl3kdPg4EQ2qNJ-F8F2-v-Xm8xys/edit?usp=sharing" target="blank" class="githubLink">Link to Trials Summary</a>
+      <a href="https://github.com/cameronFarley/BubbleSort" target="blank" class="githubLink">Link to Bubble Sort Repo</a>
+      <a href="https://github.com/cameronFarley/InsertionSort" target="blank" class="githubLink">Link to Insertion Sort Repo</a>
+      <a href="https://github.com/cameronFarley/SelectionSort" target="blank" class="githubLink">Link to Selection Sort Repo</a>
+      <br>
+      <br>
+      <br>
+      <div class="text">
+	Beginning the assignment, the first thing I did was copy the files from my old projects into new directories. Once those copies were made, I went into each sorting file and converted the [Int] tags to [String], allowing to me to work with a list of words rather than a list of numbers. Once that was done, I used the readLine() method to allow my sorters to read the contents of another file and append it into an array. Once the contents were read and put into an array, then the array could run through the sorting function and output the sorted list of words. Once that was complete, I had to create the list of words and copy them intoeach sorter's directory. To make the files I would have to copy words from a provided list and organize them into their desired orders. The first of the lists was the "ordered" list, in order to create the list, I had to run this line in the shell: "time cat /usr/chare/dict/words/ | sort | head -n 1 > ordered-10e0.txt". This command begins by reading the file /usr/share/dict/words/, it is followed by an in-shell sort, and taking the first word of the list. I precedingly did this 5 more times, each time increasing the number at the end of "10e" by 1, and adding a zero to the end of the number behind "head -n". once I have gone through this, I moved onto the next list, the "reverse ordered" list. I followed the same steps as the last list, instead I had to execute the line: "time cat /usr/share/dict/words | sort --reverse | head -n 1 > reverse-ordered-10e0.txt". Once I completed that, I moved onto the last list, the "random" list. I again followed the same steps, with just changing the command, which was now: "time cat /usr/share/dict/words |sort --random-sort | head -n 1 > random-10e0.txt". Now that all of my lists were created, I copied them in to each sorter's directories and moved onto my next step, creating the google sheet and doing my tests. I worked on formatting the google sheet to display all of my information that was required, colored nicely to increase readability. With the google sheet created, I strapped in and did my testing, my testing took about 3-4 hours alone. I began with all of my bubble sort tests, where I executed the command "time cat ordered-10e0.txt | swift main.swift > /dev/null". The command works by reading the file "ordered-10e0.txt", which was the list I created earlier, running it through my sorter, main.swift, and dumping the output into /dev/null, which essentially doesnt show the output in the shell, which is is useful when getting to larger lists. I ran that same command 5 timed before moving onto the next list, which I essentially ran the same command but increasing the number after the "10e". I did that until I got through all of my "order" lists, where I moved onto running my "reverse ordered" and "random" lists. I repeated this process with my next two sorters and logged my results on the google sheets. to my surprise, my code only timed out three times, occuring with Bubble Sort on my 100,00 word "reverse ordered" file, my 100,000 word "random" ordered file, and Insertion Sort's 100,000 "reverse order" file. after gethering my data, I put it into a graph, where you can read the process on the Summary Google Sheet. After that I push all of my files and source to individual github repositories, which can also be visited using the links on this page. 
+	</div>
       
   </body>
 </html>

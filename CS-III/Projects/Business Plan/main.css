@@ -85,15 +85,18 @@ a:hover, a:active {
 }
 
 .githubLink {
-    position: relative;
-    left: 20%;
-    padding: 25px;
+    margin-left: 7%;
+    margin-bottom: 100px;
 }
 
 .sheetsLink {
-    position: relative;
-    left: 33%;
-    padding: 25px;
+    margin-left: 19%;
+    margin-bottom: 20px;
+}
+
+.ganttLink {
+    font-size: 30px;
+    text-align: center;
 }
 
 .explanation {
@@ -101,6 +104,13 @@ a:hover, a:active {
     margin-right: 30%;
     margin-bottom: 50px;
     text-align: center;
+}
+
+.header {
+    font-family: Tahoma;
+    color: #323232;
+    text-align: center;
+    margin: 40px;
 }
 
 hr {
