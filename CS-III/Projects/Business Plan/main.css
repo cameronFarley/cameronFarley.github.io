@@ -116,3 +116,8 @@ a:hover, a:active {
 hr {
     margin-left: 25%;
 }
+
+.planLink {
+    font-size: 20px;
+    text-align: center;
+}
