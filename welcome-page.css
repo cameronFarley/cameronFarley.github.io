@@ -1,8 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 
-p {
+h2 {
     font-family: 'Outfit', sans-serif;
+    letter-spacing: .08em;
+    text-align: center;
 }

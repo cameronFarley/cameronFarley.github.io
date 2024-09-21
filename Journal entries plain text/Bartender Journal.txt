@@ -1,0 +1,21 @@
+Journal Entries
+
+9/20/2024 ----------------
+
+We deicided to make a "Bartender" machine. Now of course we are not old enough yet to drink alcohol, so it truthfully works as a soda maker.
+The idea is to make a machine that has 4 bags of syrup that are used at places like dutch bros and swig, and a bag for a base soda/just carbonated water.
+We might have to have 6 bags, 4 for syrup, one for a sprite/coke syrup and one for carbonated water sys that we can get a flavored base, but we could also
+just make one of the 4 syrup bags sprite/coke flavored. Still undecided
+
+We had different ideas on how to make it work, it seems like we are going to try a pump for each bag. The other idea was to have one put for all the bags and cut off
+any bags we didnt want to use. It will be me working on the electrical side with the board and wires, my roomate Oliver will be working on the computer science side with
+which pumps need to activate and maybe activating them if we need to write that ourselves, and my other roomate Josh will be in charge of desiging and printing the parts
+for the shell of the machine as well as assembling.
+
+The plan is to have an on off switch, and 5 bags with pumps connected to each, we would then make the hoses all come to one nozzle or have all five hoses come out of the 
+machine for filling (still undecided). We will then also either have buttons to select the syrups or maybe do a screen interface (also undecided). Lastly we want lights to
+indicate when the machine is running.
+
+For the future we need to set up a work space so we can keep track of progress online. We also need to get together and draw/design what we want our final product to look like
+as well as figuring out our unknowns.
+----------------------------
