@@ -1,0 +1,552 @@
+/* First style sheet (golf) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+nav a {
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    color: #2F2E2E;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    user-select: none;
+    padding: 12px 25px;
+    border-radius: 34px;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #f4f4f4;
+}
+
+.nav-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-image: linear-gradient(to top, 
+        rgba(213, 212, 208, 0.8) 0%, 
+        rgba(213, 212, 208, 0.8) 1%, 
+        rgba(238, 238, 236, 0.8) 31%, 
+        rgba(239, 238, 236, 0.8) 75%, 
+        rgba(233, 233, 231, 0.8) 100%
+    );
+    backdrop-filter: blur(5px);
+    border: 2px solid #fff;
+    border-bottom-style: none;
+    border-left-style: none;
+    padding: 10px;
+    border-radius: 34px;
+}
+
+.nav-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 34px;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(255, 177, 153, .8), rgba(255, 8, 68, .8));
+    color: #2f2e2e;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    opacity: 0;
+}
+
+.corner-logo {
+    display: inline;
+    color: #2F2E2E;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    user-select: none;
+    padding: 10px 20px;
+    margin-right: 4vw;
+}
+
+.theme-button {
+    font-size: 16px;
+    background-color: #2F2E2E;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+    user-select: none;
+}
+.theme-button:hover {
+    background-color: #444343;
+    color: #fff;
+    transition: .3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+/* BUTTONS --------------------------------------- */
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin: 10px;
+}
+
+.social-btn:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social-logo {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.btn-github { background-color: #24292e; }
+.btn-github:hover { background-color: #2f363d; }
+
+.btn-instagram { background-color: #E1306C; }
+.btn-instagram:hover { background-color: #C13584; }
+
+.btn-linkedin { background-color: #0077b5; }
+.btn-linkedin:hover { background-color: #005582; }
+
+.btn-tamu { background-color: #500000; }
+.btn-tamu:hover { background-color: #3C0000; }
+
+.btn-gmail { background-color: #EA4335; }
+.btn-gmail:hover { background-color: #C53929; }
+
+/* INDEX.HTML -------------------------------------*/
+
+.landing-body{
+    background-color: rgb(209,219,221);
+    background-image: url('assets/golf-landing.webp');
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0% 12%;
+}
+
+.full-name {
+    position: absolute;
+    z-index: 1;
+    margin-top: 6.5vh;
+    line-height: 1;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12vw;
+    font-weight: 900;
+    background: #FF0844;
+    background: linear-gradient(137deg, rgba(255, 8, 68, 1) 10%, rgba(255, 177, 153, 1) 90%);
+    background-clip: text;
+    color: transparent;
+    width: 70vw;
+    text-align: center;
+    left: 15vw;
+    right: 15vw;
+    user-select: none;
+}
+
+.overlap-image {
+    z-index: 2;
+    background-image: url('assets/golf-overlay.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0% 12%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.home-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    border-radius: 16px;
+    background-image: linear-gradient(to top, 
+        rgba(213, 212, 208, 0.8) 0%, 
+        rgba(213, 212, 208, 0.8) 1%, 
+        rgba(238, 238, 236, 0.8) 31%, 
+        rgba(239, 238, 236, 0.8) 75%, 
+        rgba(233, 233, 231, 0.8) 100%
+    );
+    color: #2f2e2e;
+    position: fixed;
+    bottom: 2vh;
+    left: 2vw;
+    width: 24vw;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #fff;
+    border-bottom-style: none;
+    border-left-style: none;
+    user-select: none;
+}
+.home-card:hover {
+    transition: .5s;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    background-image: linear-gradient(to top, 
+        rgba(213, 212, 208, 0.97) 0%, 
+        rgba(213, 212, 208, 0.97) 1%, 
+        rgba(238, 238, 236, 0.97) 31%, 
+        rgba(239, 238, 236, 0.97) 75%, 
+        rgba(233, 233, 231, 0.97) 100%
+    );
+    transform: translateY(-5px);
+}
+.home-card-container {
+    padding: 4px 24px;
+}
+
+.contact-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    border-radius: 16px;
+    background-image: linear-gradient(to top, 
+        rgba(213, 212, 208, 0.8) 0%, 
+        rgba(213, 212, 208, 0.8) 1%, 
+        rgba(238, 238, 236, 0.8) 31%, 
+        rgba(239, 238, 236, 0.8) 75%, 
+        rgba(233, 233, 231, 0.8) 100%
+    );
+    color: #2f2e2e;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #fff;
+    border-bottom-style: none;
+    border-left-style: none;
+    user-select: none;
+    text-align: center;
+}
+.contact-card:hover {
+    transition: .5s;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    background-image: linear-gradient(to top, 
+        rgba(213, 212, 208, 0.97) 0%, 
+        rgba(213, 212, 208, 0.97) 1%, 
+        rgba(238, 238, 236, 0.97) 31%, 
+        rgba(239, 238, 236, 0.97) 75%, 
+        rgba(233, 233, 231, 0.97) 100%
+    );
+    transform: translateY(-5px);
+}
+
+.contact-button-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/* PORTFOLIO.HTML -------------------------------------*/
+
+.portfolio-body{
+    background-image: url('assets/golf-hawaii.webp');
+    overflow: hidden;
+    background-size: cover;
+    background-color: rgb(35,86,171);
+}
+
+.projects-header {
+    position: relative;
+    z-index: 2;
+    margin-top: 2.4vw;
+    line-height: 1;
+    font-family: 'Rubik', sans-serif;
+    font-size: 8vw;
+    font-weight: 800;
+    background: #FF0844;
+    background: linear-gradient(137deg, rgba(255, 8, 68, 1) 10%, rgba(255, 177, 153, 1) 90%);
+    background-clip: text;
+    color: transparent;
+    width: 70vw;
+    text-align: center;
+    left: 15vw;
+    right: 15vw;
+    user-select: none;
+}
+
+.portfolio-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+    position: relative;
+}
+
+.portfolio-cards {
+    padding: 40px; 
+}
+
+.portfolio-card {
+    flex: 1;
+    z-index: 1;
+    background-image: linear-gradient(to top, 
+        rgba(213, 212, 208, 0.9) 0%, 
+        rgba(213, 212, 208, 0.9) 1%, 
+        rgba(238, 238, 236, 0.9) 31%, 
+        rgba(239, 238, 236, 0.9) 75%, 
+        rgba(233, 233, 231, 0.9) 100%
+    );
+    color: #2f2e2e;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #fff;
+    border-bottom-style: none;
+    border-left-style: none;
+    user-select: none;
+    border-radius: 16px;
+    height: 42vh;
+    margin-top: -21vh;
+}
+
+.portfolio-card h4 {
+    color: rgb(94, 94, 94);
+}
+.portfolio-card p {
+    font-size: 16px;
+}
+.portfolio-card .tools-used {
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(80, 80, 80);
+}
+
+.portfolio-card:hover {
+    z-index: 3;
+    transition: .5s;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    background-image: linear-gradient(to top, 
+        rgba(213, 212, 208, 0.94) 0%, 
+        rgba(213, 212, 208, 0.94) 1%, 
+        rgba(238, 238, 236, 0.94) 31%, 
+        rgba(239, 238, 236, 0.94) 75%, 
+        rgba(233, 233, 231, 0.94) 100%
+    );
+    transform: translateY(-5px);
+}
+
+/* QUALIFICATION.HTML -------------------------------------*/
+
+.qualifications-body{
+    background-image: url('assets/golf-vegas.webp');
+    overflow: hidden;
+    background-size: cover;
+    background-color: rgb(35,86,171);
+    background-position: 0% 20%;
+}
+
+.pdf-container {
+    background-color: transparent;
+    margin: 4vh 3vw;
+}
+
+.columns-qual {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.qualifications-header {
+    position: relative;
+    z-index: 2;
+    font-family: 'Rubik', sans-serif;
+    font-size: 8vw;
+    font-weight: 800;
+    background: #FF0844;
+    background: linear-gradient(137deg, rgba(255, 8, 68, 1) 10%, rgba(255, 177, 153, 1) 90%);
+    background-clip: text;
+    color: transparent;
+    user-select: none;
+    text-align: left;
+    margin: 0;
+
+    margin-bottom: -70px;
+    margin-left: 10px;
+}
+
+.qualifications-card-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    border-radius: 16px;
+    background-image: linear-gradient(to top, 
+        rgba(213, 212, 208, 0.8) 0%, 
+        rgba(213, 212, 208, 0.8) 1%, 
+        rgba(238, 238, 236, 0.8) 31%, 
+        rgba(239, 238, 236, 0.8) 75%, 
+        rgba(233, 233, 231, 0.8) 100%
+    );
+    color: #2f2e2e;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #fff;
+    border-bottom-style: none;
+    border-left-style: none;
+    user-select: none;
+    padding: 10px 20px;
+}
+.qualifications-card-container:hover {
+    transition: .5s;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    background-image: linear-gradient(to top, 
+        rgba(213, 212, 208, 0.97) 0%, 
+        rgba(213, 212, 208, 0.97) 1%, 
+        rgba(238, 238, 236, 0.97) 31%, 
+        rgba(239, 238, 236, 0.97) 75%, 
+        rgba(233, 233, 231, 0.97) 100%
+    );
+    transform: translateY(-5px);
+    z-index: 4;
+}
+.qualifications-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+    gap: 2rem;
+    margin-right: 3vw;
+}
+
+.cards-wrapper-qual {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* SERVICE.HTML -------------------------------------*/
+
+.service-body{
+    background-image: url('assets/golf-frostcreek.webp');
+    overflow: hidden;
+    background-size: cover;
+    background-color: rgb(35,86,171);
+    background-position: 0% 10%;
+}
+
+.service-header {
+    position: relative;
+    z-index: 2;
+    margin-top: 2.4vw;
+    line-height: 1;
+    font-family: 'Rubik', sans-serif;
+    font-size: 8vw;
+    font-weight: 800;
+    background: #FF0844;
+    background: linear-gradient(137deg, rgba(255, 8, 68, 1) 10%, rgba(255, 177, 153, 1) 90%);
+    background-clip: text;
+    color: transparent;
+    width: 70vw;
+    text-align: center;
+    left: 15vw;
+    right: 15vw;
+    user-select: none;
+}
+
+.service-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+    position: relative;
+}
+
+.service-cards {
+    padding: 40px; 
+}
+
+.service-card {
+    flex: 1;
+    z-index: 1;
+    background-image: linear-gradient(to top, 
+        rgba(213, 212, 208, 0.9) 0%, 
+        rgba(213, 212, 208, 0.9) 1%, 
+        rgba(238, 238, 236, 0.9) 31%, 
+        rgba(239, 238, 236, 0.9) 75%, 
+        rgba(233, 233, 231, 0.9) 100%
+    );
+    color: #2f2e2e;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #fff;
+    border-bottom-style: none;
+    border-left-style: none;
+    user-select: none;
+    border-radius: 16px;
+    height: 42vh;
+    margin-top: -21vh;
+}
+
+.service-card h4 {
+    color: rgb(94, 94, 94);
+}
+.service-card p {
+    font-size: 16px;
+}
+.service-card .tools-used {
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(80, 80, 80);
+}
+
+.service-card:hover {
+    z-index: 3;
+    transition: .5s;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    background-image: linear-gradient(to top, 
+        rgba(213, 212, 208, 0.94) 0%, 
+        rgba(213, 212, 208, 0.94) 1%, 
+        rgba(238, 238, 236, 0.94) 31%, 
+        rgba(239, 238, 236, 0.94) 75%, 
+        rgba(233, 233, 231, 0.94) 100%
+    );
+    transform: translateY(-5px);
+}
+
+.service-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.tools-used a {
+    text-decoration: underline;
+    color: rgb(80, 80, 80);
+}
+.tools-used a:hover {
+    color: rgb(50, 50, 50);
+}
+.tools-used a:visited {
+    color: rgb(80,80,80);
+}
+
+/* DISPLAY NONES -------------------------------------*/
+
+.second-landing {
+    display: none;
+}
+
+hr {
+    display: none;
+}

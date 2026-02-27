@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cameron Farley's Portfolio</title>
+        <link id="theme-link" rel="stylesheet" href="style1.css">
+    </head>
+    <body class="portfolio-body">
+        <nav class="navbar">
+			<span id="corner-logo" class="corner-logo">CF</span>
+			<span class="nav-links">
+				<div class="nav-slider"></div>
+
+				<a href="index.html" id="home-link" class="nav-item">Home</a>
+				<a class="current-link nav-item">Portfolio</a>
+				<a href="qualifications.html" class="nav-item">Qualifications</a>
+				<a href="service.html" class="nav-item">Service</a>
+				<a href="genai.html" class="nav-item">GenAI</a>
+			</span>
+			<button id="theme-button" class="theme-button">Change Styles</button>
+		</nav>
+
+        <p class="projects-header">Personal Projects</p>
+
+        <hr class="hbar-portfolio">
+
+        <div class="portfolio-cards">
+            <div class="portfolio-card-container">
+                <div class="portfolio-card">
+                    <h2>Automated Attendance</h2>
+                    <h4>Creating an efficient classroom attendance system using facial recognition.</h4>
+                    <p>This project was created in a team of 10 people. My main role was to use OpenCV to detect faces and store them in a database.
+                        then when the face was recognized again, it would be used to mark attendance. My other main role was Front-End manager.
+                        I led 4 other students that worked on the front-end of the website and ensured that the website was user-friendly and functional.
+                    </p>
+                    <p class="tools-used">Tools Used: Python, OpenCV, HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/CSAllenISD/2023-ISP-AutomatedAttendance" target="_blank" class="social-btn btn-github">
+                    <svg class="social-logo" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>GitHub</span>
+                    </a>
+                </div>
+                <div class="portfolio-card">
+                    <h2>TexAI</h2>
+                    <h4>Creating a personal AI that can be used by law enforcement in the office and the field.</h4>
+                    <p>This is an ongoing project in conjunction with the Coppell Police Dept. in Texas. I am working in a team of 4 people
+                        and made great contributions to the front end of the app and create the prototype AI. We have to use
+                        a custom LLM trained on law enforcement procedures, so we achieved this by using Ollama to run a pre-trained model in conjunction with RAG training via webscraping.
+                    </p>
+                    <p class="tools-used">Tools Used: React, Python, ChromaDB, Ollama</p>
+                    <a href="https://github.com/cameronFarley/TexAI-App" target="_blank" class="social-btn btn-github">
+                    <svg class="social-logo" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>GitHub</span>
+                    </a>
+                </div>
+                <div class="portfolio-card">
+                    <h2>Digital Casino</h2>
+                    <h4>Creating a digital casino with fake currency that can be gambled.</h4>
+                    <p>This was my Freshman year coding project, where I worked with 3 other students to create an online casino.
+                        We made several games, where I focused on the development of Blackjack. We created a virtual environment
+                        where users can navigate bewtween different games with a currency system that carried from game to game.
+                        Other games included roulette, slots, and poker.
+                    </p>
+                    <p class="tools-used">Tools Used: Python</p>
+                </div>
+            </div>
+        </div>
+
+		<script src="style-changer.js"></script>
+    </body>
+</html>
